@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    width: 390px;
+}
+
+h1 {
+    margin-top: 2px;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 3.2rem;
+}
+
+#turn-indicator {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.game-board {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+    border: none;
+    background-color: #fffffff8;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 4.3rem;
+    font-weight: 630;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.cell.taken {
+    pointer-events: none;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.cell:nth-child(3n) {
+    border-right: none; /* Right border for cells in the 3rd column */
+}
+
+.cell:nth-child(-n+3) {
+    border-top: none; /* No top border for the first row */
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none; /* No left border for cells in the first column */
+}
+
+.cell:nth-child(n+7):nth-child(-n+9) {
+    border-bottom: none; /* No left border for cells in the third row */
+}
+
+#winner-message {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+#restart-button {
+    height: 55px;
+    width: 120px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: #007bff;
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #0056b3;
+}

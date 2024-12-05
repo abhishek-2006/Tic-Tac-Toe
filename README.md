@@ -43,3 +43,5 @@ A simple 2-player **Tic Tac Toe** game on a 3x3 grid. The game ends when one pla
 2. Open index.html in your web browser.
 3. Players alternate turns to place their marks on the grid.
 4. The game announces the winner or a tie and allows restarting.
+
+⭐ Give this project a star if you found it helpful!

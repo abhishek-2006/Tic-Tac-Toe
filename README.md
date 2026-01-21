@@ -19,7 +19,7 @@ A simple 2-player **Tic Tac Toe** game on a 3x3 grid. The game ends when one pla
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/tic-tac-toe.git
+   git clone https://github.com/abhishek-2006/tic-tac-toe.git
 
 
 ## Technologies
